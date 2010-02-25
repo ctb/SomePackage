@@ -28,8 +28,7 @@ Rules, in brief:
 ----------------
 
  - for a given package, 'python -m somepackage.tests.run' should run
-   its tests, regardless of whether or not the 'tests' subpackage is
-   installed.
+   its tests, if any.
 
  - no code outside of 'somepackage.tests' should depend on
    'somepackage.tests'.  This is so that distrib packagers (debian,
