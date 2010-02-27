@@ -59,6 +59,12 @@ Results of testing-in-python discussion, 2/27:
  - Michal Kwiatkowski: explicitly suggest putting other tests in
    tests/ top-level directory.
 
+ - Michal Kwiatkowski: also look at
+
+      http://time-loop.tumblr.com/post/49578950/where-python-developers-keep-their-test-directories
+
+   to see where people put their test directories.
+
  - Michael Foord: make the mechanism framework agnostic.
 
  - Titus Brown: rely on something other than specific module
