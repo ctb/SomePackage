@@ -13,3 +13,13 @@ shows ::
 It doesn't find the test inside of 'test_package', however, because
 it's trying to match 'test_package' to the pattern 'test*.py'.  See
 discover.py, line 146.
+
+Note, you can run all three tests properly with
+
+  % python -m discover -p 'test*'
+
+Even when 'test_package' is examined for tests, the file
+'test_package/test_no_recurse.py' is not -- this is because the
+function 'test_package.load_tests' exists.  If you rename 'load_tests'
+to something else, than four tests are found (and the one in
+test_no_recurse.py fails, as it is supposed to).
