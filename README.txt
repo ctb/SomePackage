@@ -5,7 +5,7 @@ you think?  --titus
 
 To run the tests, you can do:
 
-  % python -m somepackage.tests.run
+  % python -m somepackage.tests.__main__
 
 under Python 2.5 or above, and
 
@@ -27,7 +27,7 @@ How about py.test?  Other test runners?
 Rules, in brief:
 ----------------
 
- - for a given package, 'python -m somepackage.tests.run' should run
+ - for a given package, 'python -m somepackage.tests.__main__' should run
    its tests, if any.
 
  - no code outside of 'somepackage.tests' should depend on
