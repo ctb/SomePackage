@@ -144,3 +144,10 @@ Longer e-mail from Michael:
 Concerns: how flexible is 'python setup.py test'?  Can it be framework
 agnostic, or do frameworks have to expose a unittest-like framework
 (e.g. what nose has done)?
+
+Another point: I like the idea of being able to specify other test
+runners, with unittest being the default one.  Once we have that
+level of API compliance then we can do all sorts of nice things;
+more once I work through some examples.
+
+@@CTB revisit test_suite / test_runner in setuptools
